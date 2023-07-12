@@ -42,7 +42,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 						<?endif;?>
 					</div>
 					<textarea class="input__input" type="text" value=""
-					name="form_<?=$arQuestion['STRUCTURE'][0]['FIELD_TYPE']?>_<?=$arQuestion['STRUCTURE'][0]['ID']?>">
+						name="form_<?=$arQuestion['STRUCTURE'][0]['FIELD_TYPE']?>_<?=$arQuestion['STRUCTURE'][0]['ID']?>">
 					</textarea>
 				</label>
 			</div>
@@ -58,8 +58,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 							<?endif;?>
 						</div>
 						<input class="input__input" type="<?=$arQuestion['STRUCTURE'][0]['FIELD_TYPE']?>" value=""
-						required=""
-						name="form_<?=$arQuestion['STRUCTURE'][0]['FIELD_TYPE']?>_<?=$arQuestion['STRUCTURE'][0]['ID']?>">
+							required=""
+							name="form_<?=$arQuestion['STRUCTURE'][0]['FIELD_TYPE']?>_<?=$arQuestion['STRUCTURE'][0]['ID']?>">
 					</label>
 				</div>
 			<?
@@ -78,9 +78,9 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 		</div>
 		<button class="form-button contact-form__bottom-button">
 			<input <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?>
-			class="form-button__title" type="submit" name="web_form_submit"
-			value="<?=htmlspecialcharsbx(trim($arResult["arForm"]["BUTTON"]) ==
-			'' ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>"
+				class="form-button__title" type="submit" name="web_form_submit"
+				value="<?=htmlspecialcharsbx(trim($arResult["arForm"]["BUTTON"]) ==
+				'' ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>"
 			/>
 		</button>
 	</div>
